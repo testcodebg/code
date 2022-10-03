@@ -72,7 +72,7 @@ $array['quality'] = $data['quality'];
 $array['size'] = $data['filesize'];
 $array['url'] = $data['download'];
 
-if (isset($url) and $data['download']) {
+if (isset($url)) {
     echo json_encode($array, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 } else {
     echo "error";
